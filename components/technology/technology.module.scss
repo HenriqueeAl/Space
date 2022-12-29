@@ -1,0 +1,83 @@
+.main{
+    display: flex;
+    height: 75%;
+    .content{
+        width: 45%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .textspace{
+            min-width: 50%;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-size: 28px;
+            letter-spacing: 4.725px;
+            color: white;
+            padding-bottom: 150px;
+            .number{
+                mix-blend-mode: normal;
+                opacity: 0.25;
+                font-weight: 700;
+                padding-right: 24px;
+            }
+        }
+        .contenttwo{
+            display: flex;
+            flex-direction: row;
+            nav{
+                ul{
+                    list-style: none;
+                    li{
+                        width: 80px;
+                        height: 80px;
+                        color: white;
+                        background-color: transparent;
+                        border: 1px solid RGBA(255,255,255,0.25);
+                        border-radius: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Bellefair';
+                        font-weight: 400;
+                        font-size: 32px;
+                        letter-spacing: 2px;
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .text{
+                max-width: 480px;
+                color: white;
+                margin-left: 80px;
+                h3{
+                    color: #D0D6F9;
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: 'Barlow Condensed';
+                    letter-spacing: 2.7px;
+                    padding-bottom: 11px;
+    
+                }
+                h2{
+                    font-weight: 400;
+                    font-size: 56px;
+                    line-height: 64px;
+                    font-family: 'Bellefair';
+                    padding-bottom: 17px;
+                }
+                p{
+                    font-family: 'Barlow';
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #D0D6F9;
+                    max-width: 444px;
+                    line-height: 32px;
+                }
+            }
+    
+        }
+    }
+}

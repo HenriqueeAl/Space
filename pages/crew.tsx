@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Crewcontent from '../components/crewcontent/crew'
 import Header from '../components/Header/Header'
 import styles from '../styles/crew.module.scss'
 
@@ -16,7 +17,7 @@ export default function Destination() {
       </Head>
       <main className={styles.test}>
         <Header></Header>
-        
+        <Crewcontent></Crewcontent>
       </main>
     </>
   )

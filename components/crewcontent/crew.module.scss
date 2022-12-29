@@ -1,0 +1,74 @@
+.content{
+    width: 80%;
+    margin: 0 auto;
+    height: 75%;
+    display: flex;
+
+    
+    .textmeet{
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+        color: white;
+        padding-bottom: 150px;
+        .number{
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            font-weight: 700;
+            padding-right: 24px;
+        }
+    }
+    .text{
+        color: #FFFFFF;
+        h3{
+            font-weight: 400;
+            font-family: 'Bellefair';
+            font-size: 32px;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+        }
+        h2{
+            font-weight: 400;
+            font-family: 'Bellefair';
+            font-size: 56px;
+            padding-bottom: 27px;
+            text-transform: uppercase;
+        }
+        p{
+            color: #D0D6F9;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 18px;
+            max-width: 445px;
+        }
+        nav{
+            padding-top: 100px;
+            ul{
+                width: 110px;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                li{
+                    width: 15px;
+                    height: 15px;
+                    background-color: white;
+                    mix-blend-mode: normal;
+                    opacity: 0.17;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .image{
+        padding-left: 180px;
+        img{
+            height: 75%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

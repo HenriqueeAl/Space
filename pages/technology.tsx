@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header/Header'
+import Technologycontent from '../components/technology/Technology'
 import styles from '../styles/technology.module.scss'
 
 export default function technology() {
@@ -16,7 +17,7 @@ export default function technology() {
       </Head>
       <main className={styles.test}>
         <Header></Header>
-        
+        <Technologycontent></Technologycontent>
       </main>
     </>
 

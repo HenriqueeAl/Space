@@ -1,0 +1,86 @@
+.content{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        height: 100%;
+        .textpick{
+            span{
+                font-family: 'Barlow Condensed';
+                font-size: 28px;
+                letter-spacing: 4.725px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            .numberpick{
+                opacity: 0.25;
+                padding-right: 28px;
+            }
+        }
+        img{
+            height: 80%;
+        }
+    }
+    .rigth{
+        width: 50%;
+        color: white;
+        max-width: 444px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        ul{
+            list-style: none;
+            display: flex;
+            padding-bottom: 37px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            li{
+                height: 30px;
+                font-size: 16px;
+                font-family: 'Barlow Condensed';
+                letter-spacing: 2.7px;
+                cursor: pointer;
+            }
+        }
+        h1{
+            font-family: 'Bellefair';
+            font-size: 100px;
+        }
+        p{
+            font-size: 18px;
+            font-family: 'Barlow';
+            color: #D0D6F9;
+            padding-bottom: 54px;
+            border-bottom: 1px solid #383B4B;
+        }
+        .rigthbotton{
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            .distance{
+                padding-right: 70px;
+            }
+            p{
+                padding: 0;
+                padding-top: 28px;
+                padding-bottom: 13px;
+                font-family: 'Barlow Condensed';
+                border: none;
+                font-size: 14px;
+                letter-spacing: 2.3625px;
+            }
+            span{
+                font-size: 28px;
+                font-family: 'Bellefair';
+            }
+        }
+    }
+}

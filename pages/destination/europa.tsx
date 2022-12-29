@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Header from '../components/Header/Header'
-import styles from '../styles/destination.module.scss'
+import Destinationcontent from '../../components/destinationcontent/destinationcontent'
+import Header from '../../components/Header/Header'
+import styles from '../../styles/destination.module.scss'
 
-export default function Destination() {
+export default function Europa() {
   return (
     <>
       <Head>
@@ -17,6 +18,7 @@ export default function Destination() {
       
       <main className={styles.test}>
           <Header></Header>
+          <Destinationcontent></Destinationcontent>
           
       </main>
     </>

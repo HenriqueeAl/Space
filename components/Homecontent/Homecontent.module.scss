@@ -1,0 +1,41 @@
+.content{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    .text{
+        max-width: 450px;
+        h3{
+            font-family: 'Barlow Condensed';
+            color: #D0D6F9;
+            font-size: 28px;
+            letter-spacing: 4.725px;
+        }
+        h1{
+            font-size: 150px;
+            font-family: 'Bellefair';
+        }
+        p{
+            font-family: 'Barlow';
+            font-size: 18px;
+            color: #D0D6F9;
+        }
+    }
+    .explore{
+        width: 275px;
+        height: 275px;
+        background: #FFFFFF;
+        border-radius: 275px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: 'Bellefair';
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: #0B0D17;
+        }
+    }
+}

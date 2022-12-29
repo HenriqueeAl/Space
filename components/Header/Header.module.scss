@@ -12,13 +12,11 @@
 
     .navsdektop{
         color: white;
-        font-family: 'Barlow Condensed';
         width: 90%;
         height: 100%;
         font-size: 16px;
         display: flex;
         align-items: center;
-        justify-content: spa;
         .line{
             width: 30%;
             height: 1px;
@@ -38,6 +36,12 @@
             align-items: center;
             background: rgba(255, 255, 255, 0.04);
             backdrop-filter: blur(40.7742px);
+            .link{
+                text-decoration: none;
+                color: #FFFFFF;
+                height: 100%;
+                font-family: 'Barlow Condensed';
+            }
             li{
                 display: flex;
                 align-items: center;
@@ -51,8 +55,8 @@
                 }
             }
             li:hover{
-                border-bottom: 1px solid white;
                 cursor: pointer;
+                opacity: 0.4;
             }
         }
     }

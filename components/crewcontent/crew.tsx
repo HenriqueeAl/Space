@@ -43,7 +43,7 @@ export default function Crewcontent() {
                     <span className={styles.number}>02</span>
                     <span className='text'>MEET YOUR CREW</span>
                 </div>
-                <div className={styles.text}>
+                <div className={styles.textdesktop}>
                     <h3>{prof}</h3>
                     <h2>{name}</h2>
                     <p>

@@ -18,7 +18,6 @@
         .textspace{
             min-width: 50%;
             font-family: 'Barlow Condensed';
-            font-style: normal;
             font-size: 28px;
             letter-spacing: 4.725px;
             color: white;
@@ -31,7 +30,7 @@
                 margin: 50px auto;
                 padding-bottom: 20px;
             }
-            @media (max-width:600px) {
+            @media (max-width:660px) {
                 font-size: 16px;
                 text-align: center;
             }

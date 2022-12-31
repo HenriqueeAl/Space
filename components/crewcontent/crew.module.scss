@@ -3,9 +3,13 @@
     margin: 0 auto;
     height: 75%;
     display: flex;
-
     @media (max-width:1315px) {
-        width: 95%;
+        width: 90%;
+        height: 85%;
+    }
+    @media (max-width:1000px) {
+        height: 85%;
+        flex-direction: column;
     }
     
     .textmeet{
@@ -15,8 +19,17 @@
         letter-spacing: 4.725px;
         color: white;
         padding-bottom: 150px;
-        @media (max-width:1100px) {
-            font-size: 24px;
+        @media (max-width:1320px){
+            padding-bottom: 80px;
+        }
+        @media (max-width:1000px) {
+            min-width: 90%;
+            margin: 50px auto;
+            padding-bottom: 20px;
+        }
+        @media (max-width:660px) {
+            font-size: 16px;
+            text-align: center;
         }
         .number{
             mix-blend-mode: normal;
@@ -25,8 +38,11 @@
             padding-right: 24px;
         }
     }
-    .text{
+    .textdesktop{
         color: #FFFFFF;
+        @media (max-width:1000px) {
+            text-align: center;
+        }
         h3{
             font-weight: 400;
             font-family: 'Bellefair';
@@ -38,6 +54,9 @@
             @media (max-width:1100px) {
                 font-size: 28px;
             }
+            @media (max-width:600px) {
+                font-size: 16px;
+            }
         }
         h2{
             font-weight: 400;
@@ -47,6 +66,9 @@
             text-transform: uppercase;
             @media (max-width:1100px) {
                 font-size: 45px;
+            }
+            @media (max-width:600px) {
+                font-size: 24px;
             }
         }
         p{
@@ -59,14 +81,28 @@
                 font-size: 15px;
                 max-width: 400px;
             }
+            @media (max-width:1000px) {
+                margin: 0 auto;
+                width: 535px;
+                max-width: 90%;
+            }
+            @media (max-width:600px) {
+                font-size: 15px;
+            }
         }
         nav{
-            padding-top: 100px;
+            margin-top: 100px;
+            @media (max-width:1000px) {
+                margin: 40px 0;
+            }
             ul{
                 width: 110px;
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
+                @media (max-width:1000px) {
+                    margin: 0 auto;
+                }
                 li{
                     width: 15px;
                     height: 15px;
@@ -84,12 +120,23 @@
         @media (max-width:1350px) {
             padding-left: 50px;
         }
+        @media (max-width:1000px) {
+            margin: auto;
+        }
         img{
             height: 75%;
             position: absolute;
-            bottom: 0;
-            @media (max-width:1220px) {
-                height: 60%;
+            bottom: 0px;
+            @media (max-width:1250px) {
+                height: 58%;
+            }
+            @media (max-width:1000px) {
+                height: 540px;
+                margin-bottom: -4px;
+                position: static;
+            }
+            @media (max-width:660px) {
+                height: 250px;
             }
         }
     }

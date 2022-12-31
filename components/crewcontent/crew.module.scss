@@ -4,6 +4,9 @@
     height: 75%;
     display: flex;
 
+    @media (max-width:1315px) {
+        width: 95%;
+    }
     
     .textmeet{
         font-family: 'Barlow Condensed';
@@ -12,6 +15,9 @@
         letter-spacing: 4.725px;
         color: white;
         padding-bottom: 150px;
+        @media (max-width:1100px) {
+            font-size: 24px;
+        }
         .number{
             mix-blend-mode: normal;
             opacity: 0.25;
@@ -29,6 +35,9 @@
             opacity: 0.5;
             padding-bottom: 15px;
             text-transform: uppercase;
+            @media (max-width:1100px) {
+                font-size: 28px;
+            }
         }
         h2{
             font-weight: 400;
@@ -36,6 +45,9 @@
             font-size: 56px;
             padding-bottom: 27px;
             text-transform: uppercase;
+            @media (max-width:1100px) {
+                font-size: 45px;
+            }
         }
         p{
             color: #D0D6F9;
@@ -43,6 +55,10 @@
             font-weight: 400;
             font-size: 18px;
             max-width: 445px;
+            @media (max-width:1100px) {
+                font-size: 15px;
+                max-width: 400px;
+            }
         }
         nav{
             padding-top: 100px;
@@ -65,10 +81,16 @@
     }
     .image{
         padding-left: 180px;
+        @media (max-width:1350px) {
+            padding-left: 50px;
+        }
         img{
             height: 75%;
             position: absolute;
             bottom: 0;
+            @media (max-width:1220px) {
+                height: 60%;
+            }
         }
     }
 }

@@ -10,7 +10,10 @@
         height: 80px;
     }
     img{
-        padding-left: 55px;
+        margin-left: 55px;
+        @media (max-width:660px) {
+            margin-left: 24px;
+        }
     }
 
     .navsdektop{
@@ -21,7 +24,10 @@
         display: flex;
         align-items: center;
         @media (max-width:1000px) {
-            justify-content: flex-end
+            justify-content: flex-end;
+        }
+        @media (max-width:660px) {
+            display: none;
         }
         .line{
             width: 30%;
@@ -69,6 +75,67 @@
             li:hover{
                 cursor: pointer;
                 opacity: 0.4;
+            }
+        }
+    }
+
+    .mobileclick{
+        display:  none;
+        cursor: pointer;
+        margin-right: 24px;
+        position: absolute;
+        right: 0;
+        @media (max-width:660px) {
+            display: block;
+        }
+    }
+    .navsmobileclose{
+        display: none;
+    }
+    .navsmobileopen{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        @media (max-width:660px){
+            display: block;
+            
+        }
+        .menuclose{
+            cursor: pointer;
+            position: absolute;     
+            top: 34px;
+            right: 20px;
+            margin-left: 0;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-top: 120px;
+            width: 100%;
+            .link{
+                text-decoration: none;
+                margin-bottom: 35px;
+                margin-left: 35px;
+                font-family: 'Barlow Condensed';
+                letter-spacing: 2.7px;
+                
+                color: white;
+                li{
+                    .number{
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+                    .name{
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }

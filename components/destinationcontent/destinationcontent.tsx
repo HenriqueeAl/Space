@@ -36,7 +36,7 @@ export default function Destinationcontent() {
         <main className={styles.content}>
             <section className={styles.left}>
                 <div className={styles.textpick}>
-                    <span className={styles.numberpick}>00</span>
+                    <span className={styles.numberpick}>01</span>
                     <span>Pick your destination</span>
                 </div>
                 <img src={planet} alt='planet'></img>
@@ -48,13 +48,13 @@ export default function Destinationcontent() {
                             <li style={rota == '/destination/moon' ? {borderBottom: '3px solid white'} : {}}>MOON</li>
                         </Link>
                         <Link href='/destination/mars'>
-                            <li style={rota == '/destination/mars' ? {borderBottom: '3px solid white', marginLeft: '38px'} : {marginLeft: '38px'}}>MARS</li>
+                            <li style={rota == '/destination/mars' ? {borderBottom: '3px solid white'} : {}}>MARS</li>
                         </Link>
                         <Link href='/destination/europa'>
-                            <li style={rota == '/destination/europa' ? {borderBottom: '3px solid white', marginLeft: '38px'} : {marginLeft: '38px'}}>EUROPA</li>
+                            <li style={rota == '/destination/europa' ? {borderBottom: '3px solid white'} : {}}>EUROPA</li>
                         </Link>
                         <Link href='/destination/titan'>
-                            <li style={rota == '/destination/titan' ? {borderBottom: '3px solid white', marginLeft: '38px'} : {marginLeft: '38px'}}>TITAN</li>
+                            <li style={rota == '/destination/titan' ? {borderBottom: '3px solid white'} : {}}>TITAN</li>
                         </Link>
                     </ul>
                 </nav>

@@ -30,9 +30,9 @@ export default function Header() {
                 </Link>
             </ul>
         </nav>
-        <img src='menuhamburger.png' className={styles.mobileclick} onClick={()=>{setMenuopen(true)}}></img>
+        <img src='/menuhamburger.png' className={styles.mobileclick} onClick={()=>{setMenuopen(true)}}></img>
         <nav className={menuopen == false ? styles.navsmobileclose : styles.navsmobileopen}>
-            <img src='closemenu.png' className={styles.menuclose} onClick={()=>{setMenuopen(false)}}></img>
+            <img src='/closemenu.png' className={styles.menuclose} onClick={()=>{setMenuopen(false)}}></img>
             <ul>
                 <Link href='/home' className={styles.link}>
                   <li><span className={styles.number}>00</span> <span className={styles.name}>HOME</span></li>

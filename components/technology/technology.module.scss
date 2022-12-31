@@ -1,12 +1,20 @@
 .main{
     display: flex;
     height: 75%;
+    @media (max-width:1000px) {
+        flex-direction: column;
+        height: 85%;
+    }
     .content{
         width: 45%;
         margin: 0 auto;
         height: 100%;
         display: flex;
         flex-direction: column;
+        @media (max-width:1000px) {
+            width: 100%;
+            flex-direction: row;
+        }
         .textspace{
             min-width: 50%;
             font-family: 'Barlow Condensed';
@@ -15,6 +23,18 @@
             letter-spacing: 4.725px;
             color: white;
             padding-bottom: 150px;
+            @media (max-width:1320px){
+                padding-bottom: 80px;
+            }
+            @media (max-width:1000px) {
+                min-width: 90%;
+                margin: 50px auto;
+                padding-bottom: 20px;
+            }
+            @media (max-width:600px) {
+                font-size: 16px;
+                text-align: center;
+            }
             .number{
                 mix-blend-mode: normal;
                 opacity: 0.25;
@@ -22,12 +42,16 @@
                 padding-right: 24px;
             }
         }
-        .contenttwo{
+        .textdesktop{
             display: flex;
             flex-direction: row;
+            @media (max-width:1000px) {
+                display: none;
+            }
             nav{
                 ul{
                     list-style: none;
+
                     li{
                         width: 80px;
                         height: 80px;
@@ -78,6 +102,116 @@
                 }
             }
     
+        }
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media (max-width:1000px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        .desktopimg{
+            width: 80%;
+            @media (max-width:1000px) {
+                display: none;
+            }
+        }
+        .mobileimg{
+            width: 100%;
+            height: 310px;
+            display: none;
+            @media (max-width:1000px) {
+                display: block;
+            }
+            @media (max-width:660px) {
+                height: 200px;
+            }
+            @media (max-width:440px) {
+                height: 160px;
+            }
+        }
+        .textmobile{
+            display: none;
+            text-align: center;
+            @media (max-width:1000px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+            nav{
+                
+                margin: auto;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        width: 60px;
+                        height: 60px;
+                        color: white;
+                        background-color: transparent;
+                        border: 1px solid RGBA(255,255,255,0.25);
+                        border-radius: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Bellefair';
+                        font-weight: 400;
+                        font-size: 32px;
+                        letter-spacing: 2px;
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                        margin-right: 20px;
+                    }
+                }
+            }
+    
+            .text{
+                max-width: 480px;
+                color: white;
+                margin-left: 80px;
+                margin-bottom: 70px;
+                @media (max-width:1000px) {
+                    margin-left: 0;
+                }
+                h3{
+                    color: #D0D6F9;
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: 'Barlow Condensed';
+                    letter-spacing: 2.7px;
+                    padding-bottom: 11px;
+                    @media (max-width:600px) {
+                        font-size: 14px;
+                    }
+                }
+                h2{
+                    font-weight: 400;
+                    font-size: 56px;
+                    line-height: 64px;
+                    font-family: 'Bellefair';
+                    padding-bottom: 17px;
+                    @media (max-width:600px) {
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    font-family: 'Barlow';
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #D0D6F9;
+                    max-width: 444px;
+                    line-height: 32px;
+                    @media (max-width:1000px) {
+                        max-width: 90%;
+                        margin: auto;
+                    }
+                    @media (max-width:600px) {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }

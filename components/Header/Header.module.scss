@@ -5,7 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    @media (max-width:1000px) {
+        margin-top: 0px;
+        height: 80px;
+    }
     img{
         padding-left: 55px;
     }
@@ -17,6 +20,9 @@
         font-size: 16px;
         display: flex;
         align-items: center;
+        @media (max-width:1000px) {
+            justify-content: flex-end
+        }
         .line{
             width: 30%;
             height: 1px;
@@ -26,6 +32,9 @@
             position: relative;
             left: 35px;
             z-index: 1;
+            @media (max-width:1000px) {
+                display: none;
+            }
         }
         ul{
             width: 70%;
@@ -49,6 +58,9 @@
                 letter-spacing: 2.7px;
                 .number{
                     font-weight: 700;
+                    @media (max-width:900px) {
+                        display: none;
+                    }
                 }
                 .name{
                     padding-left: 11px;

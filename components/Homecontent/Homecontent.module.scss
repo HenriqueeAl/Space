@@ -5,22 +5,45 @@
     padding-bottom: 150px;
     display: flex;
     justify-content: space-between;
+    @media (max-width:1000px) {
+        flex-direction: column;        
+    }
     .text{
         max-width: 450px;
+        @media (max-width:1000px) {
+            margin: 0 auto;
+            text-align: center;
+        }
         h3{
             font-family: 'Barlow Condensed';
             color: #D0D6F9;
             font-size: 28px;
             letter-spacing: 4.725px;
+            @media (max-width:1000px) {
+                font-size: 20px;
+                margin-top: 100px;
+            }
+            @media (max-width:660px) {
+                font-size: 16px;
+                letter-spacing: 2.7px;
+                margin-top: 60px;
+            }
         }
         h1{
             font-size: 150px;
             font-family: 'Bellefair';
+            font-weight: 400;
+            @media (max-width:660px) {
+                font-size: 80px;
+            }
         }
         p{
             font-family: 'Barlow';
             font-size: 18px;
             color: #D0D6F9;
+            @media (max-width:1000px) {
+                font-size: 15px;
+            }
         }
     }
     .explore{
@@ -31,11 +54,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width:1000px) {
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+        @media (max-width:660px) {
+            margin-top: 80px;
+            width: 150px;
+            height: 150px;
+        }
         p{
             font-family: 'Bellefair';
             font-size: 32px;
             letter-spacing: 2px;
             color: #0B0D17;
+            font-weight: 400;
+            @media (max-width:660px) {
+                font-size: 20px;
+            }
         }
     }
 }
